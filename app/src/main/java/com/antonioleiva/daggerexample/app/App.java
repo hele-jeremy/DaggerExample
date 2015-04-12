@@ -21,10 +21,10 @@
 
 package com.antonioleiva.daggerexample.app;
 
+import com.antonioleiva.daggerexample.app.domain.AnalyticsManager;
+
 import android.app.Application;
 import android.content.Context;
-
-import com.antonioleiva.daggerexample.app.domain.AnalyticsManager;
 
 import javax.inject.Inject;
 
@@ -44,7 +44,7 @@ public class App extends Application {
     }
 
     private void setupGraph() {
-        component = Dagger_AppComponent.builder()
+        component = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();
         component.inject(this);

@@ -20,11 +20,11 @@
 
 package com.antonioleiva.daggerexample.app.ui.common;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 import com.antonioleiva.daggerexample.app.App;
 import com.antonioleiva.daggerexample.app.AppComponent;
+
+import android.app.Activity;
+import android.os.Bundle;
 
 public abstract class BaseActivity extends Activity {
 
